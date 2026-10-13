@@ -1,0 +1,43 @@
+Question 1: What is a variable?
+A variable is a named storage location in a computer program. It holds a value that can be used or changed while
+the program runs.
+
+Question 2: What is the purpose of a data type?
+A data type tells the program what kind of value a variable can store, such as a whole number, a decimal
+number, or a character. It also helps the compiler determine how much memory is needed and which operations
+are allowed.
+
+Question 3: What is the difference between int and double?
+The int data type stores whole numbers, such as 10 or -4. The double data type stores numbers with decimal
+parts, such as 10.5 or 3.14.
+
+Question 4: What data type would you use to store:
+a. Number of employees: int, because the number of employees is a whole number.
+b. Annual revenue: double, because revenue may include decimal values.
+c. A supplier category such as A: char, because the category is a single character, for example 'A'.
+d. A tax rate: double, because a tax rate may contain a decimal value, such as 0.15.
+
+Question 5: What is the difference between char grade = 'A'; and char grade[] = "A";
+char grade = 'A'; stores one character in a single char variable. char grade[] = "A"; stores a string in a character
+array, including the terminating null character (\0). The first uses single quotation marks for one character; the
+second uses double quotation marks for a string.
+
+Question 6: What is a constant?
+A constant is a value that is not intended to change while the program runs. In C, the const keyword can be used
+to prevent a variable from being modified through that name after it has been initialized.
+
+Question 7: Why might a programmer use const double VAT_RATE = 0.15; instead of repeatedly
+writing 0.15?
+Using a named constant makes the code easier to read and maintain. The name VAT_RATE explains what 0.15
+represents, and if the rate changes, the programmer can update it in one place. The const keyword also helps
+prevent accidental changes to the value.
+
+Question 8: What is wrong with double revenue; scanf("%d", &revenue);
+The format specifier %d is for an int, but revenue is declared as a double. Using the wrong format specifier
+can cause incorrect behaviour. For a double variable, scanf should use %lf, like this: scanf("%lf", &revenue);
+
+Question 9: Write a declaration for a variable called annualBudget that can store decimal values.
+double annualBudget;
+
+Question 10: Write a C statement that calculates the balance between revenue and expenses.
+balance = revenue - expenses;
